@@ -64,7 +64,7 @@ nav button {
 }
 
 .hero h1 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	margin-bottom: 20px;
 }
 
@@ -117,13 +117,14 @@ select {
 .brands-section {
 	text-align: center;
 	padding: 20px;
-	background-color: #f8f8f8;
+	background-color: white;
 }
 
 .brands-section h2 {
 	margin-bottom: 20px;
-	font-size: 24px;
+	font-size: 18px;
 	color: #333;
+	text-align: left;
 }
 
 .brand-logos {
@@ -171,7 +172,7 @@ select {
 
 .design-content p {
 	margin-bottom: 20px;
-	color: #333;
+	color: #797979;
 	line-height: 1.6;
 }
 
@@ -203,6 +204,10 @@ select {
 .workspace-content h2,
 .workspace-content p {
 	margin: 0;
+}
+
+.workspace-content p {
+	font-size: 0.8em;
 }
 
 .why-choose {
@@ -385,15 +390,52 @@ button.next:hover {
 }
 
 footer {
-	background: #333;
+	background: #14251c;
 	color: #fff;
 	padding: 20px;
-	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.footer-left,
+.footer-right {
+	display: flex;
+	align-items: center;
+}
+
+.footer-logo {
+	font-size: 24px;
+	margin-right: 20px; /* Adjust as necessary */
+}
+
+.footer-nav {
+	background: #14251c;
+}
+
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px; /* Adjust as necessary */
+}
+
+.footer-right p {
+	margin-right: 20px; /* Adjust as necessary */
 }
 
 footer a {
 	color: #fff;
 	text-decoration: none;
+	margin-right: 20px; /* Adjust as necessary */
 }
 
 @media (max-width: 992px) {
@@ -440,6 +482,26 @@ footer a {
 	.cta-form .cta-button {
 		width: 100%;
 		margin-bottom: 10px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-left,
+	.footer-right {
+		margin-bottom: 10px;
+	}
+
+	.footer-nav a,
+	footer a {
+		margin-right: 0;
+		margin-bottom: 5px; /* Space out the links when stacked */
+	}
+
+	.footer-logo {
+		margin-bottom: 20px; /* Space out logo from the links */
 	}
 
 	nav {
