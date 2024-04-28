@@ -207,12 +207,21 @@ select {
 
 .why-choose {
 	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .why-choose h2 {
-	text-align: center;
+	text-align: left;
 	margin-bottom: 40px;
 	font-size: 1.8em;
+	padding-left: 0px;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
 }
 
 .features article {
@@ -222,6 +231,11 @@ select {
 .features h3 {
 	font-size: 1.2em;
 	margin-bottom: 5px;
+}
+
+.features p {
+	color: #797979;
+	font-size: 1em;
 }
 
 .call-to-action {
@@ -279,6 +293,11 @@ footer a {
 	.workspace-content {
 		padding: 20px;
 	}
+
+	.features {
+		grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+	}
+
 	nav {
 		text-align: left;
 	}
