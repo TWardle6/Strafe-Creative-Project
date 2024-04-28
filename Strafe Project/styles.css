@@ -81,6 +81,30 @@ select {
 	margin-bottom: 20px;
 }
 
+.brands-section {
+	text-align: center;
+	padding: 20px;
+	background-color: #f8f8f8;
+}
+
+.brands-section h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #333;
+}
+
+.brand-logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.brand-logo {
+	height: auto;
+	width: 100px;
+}
+
 .design-work {
 	padding: 40px 20px;
 	background: #f8f8f8;
