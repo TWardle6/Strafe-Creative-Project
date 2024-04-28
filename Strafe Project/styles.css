@@ -72,19 +72,56 @@ nav button {
 	margin-bottom: 20px;
 }
 
-form {
-	max-width: 500px;
+.hero form {
+	display: flex;
+	justify-content: center;
+	max-width: calc(100% - 150px);
 	margin: 20px auto;
+	gap: 0;
 }
 
-form .form-field {
-	margin-bottom: 15px;
+.hero form select,
+.hero form button {
+	padding: 16px 24px;
+	margin: 0;
+	border: none;
+	font-family: "Syne", sans-serif;
+	height: 50px;
 }
 
-select {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 1rem;
+.hero form button {
+	background-color: #01b154;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	padding: 0;
+	font-size: 0.75rem;
+	line-height: 50px;
+	text-align: center;
+	white-space: nowrap;
+	min-width: 150px;
+}
+
+.hero form select:first-child {
+	border-radius: 0;
+	border-right: 1px solid #01b154;
+}
+
+.hero form select:focus,
+.hero form button:focus {
+	outline: none;
+	border-color: #01b154;
+}
+
+.hero form .form-field {
+	margin-bottom: 0;
+}
+
+.hero form button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 24px;
 }
 
 .hero-content {
@@ -99,19 +136,6 @@ select {
 	width: 100%;
 	height: auto;
 	display: block;
-}
-
-.search-form {
-	display: flex;
-	flex-direction: column;
-}
-
-.search-button {
-	padding: 15px 30px;
-	background-color: #4caf50;
-	color: white;
-	border: none;
-	cursor: pointer;
 }
 
 .brands-section {
@@ -153,7 +177,7 @@ select {
 	align-items: center;
 	justify-content: space-between;
 	padding: 50px;
-	max-width: 1200px;
+	width: calc(100% - 150px);
 	margin: 0 auto;
 }
 
@@ -162,7 +186,7 @@ select {
 	color: #333;
 	margin-right: 50px;
 	flex: 1;
-	white-space: nowrap;
+	white-space: normal;
 }
 
 .design-content {
@@ -212,7 +236,7 @@ select {
 
 .why-choose {
 	padding: 40px 20px;
-	max-width: 1200px;
+	width: calc(100% - 150px);
 	margin: 0 auto;
 }
 
@@ -315,7 +339,7 @@ button.next:hover {
 	align-items: center;
 	justify-content: center;
 	width: calc(100% - 150px);
-	margin: auto;
+	margin: 100px auto;
 }
 
 .cta-content h2 {
@@ -392,7 +416,7 @@ button.next:hover {
 footer {
 	background: #14251c;
 	color: #fff;
-	padding: 20px;
+	padding: 40px 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -404,38 +428,35 @@ footer {
 	align-items: center;
 	width: 100%;
 	max-width: 1200px;
-	margin: auto;
+	margin: 40px auto;
 }
 
 .footer-left,
 .footer-right {
 	display: flex;
 	align-items: center;
+	gap: 20px;
 }
 
 .footer-logo {
 	font-size: 24px;
-	margin-right: 20px; /* Adjust as necessary */
+	flex-shrink: 0;
 }
 
 .footer-nav {
 	background: #14251c;
 }
 
-.footer-nav a {
+.footer-nav a,
+.footer-right a,
+.footer-right p {
+	font-size: 0.75em;
+	margin: 0 15px;
 	color: #fff;
-	text-decoration: none;
-	margin-right: 20px; /* Adjust as necessary */
 }
 
 .footer-right p {
-	margin-right: 20px; /* Adjust as necessary */
-}
-
-footer a {
-	color: #fff;
-	text-decoration: none;
-	margin-right: 20px; /* Adjust as necessary */
+	margin: 0;
 }
 
 @media (max-width: 992px) {
@@ -452,6 +473,7 @@ footer a {
 		flex: 1;
 		margin-right: 10px;
 	}
+
 	.workspace-section {
 		flex-direction: column;
 		padding: 0;
@@ -497,11 +519,11 @@ footer a {
 	.footer-nav a,
 	footer a {
 		margin-right: 0;
-		margin-bottom: 5px; /* Space out the links when stacked */
+		margin-bottom: 5px;
 	}
 
 	.footer-logo {
-		margin-bottom: 20px; /* Space out logo from the links */
+		margin-bottom: 20px;
 	}
 
 	nav {
