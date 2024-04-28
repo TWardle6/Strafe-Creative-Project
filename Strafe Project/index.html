@@ -17,9 +17,25 @@
 	<body>
 		<header>
 			<nav>
-				<a href="#locations">Locations</a>
-				<a href="#explore">Explore Spaces</a>
-				<a href="#facilities">Space Facilities</a>
+				<span class="deskspace-logo">DeskSpace</span>
+				<a href="#locations"
+					>Locations<img
+						src="images\green arrow.png"
+						alt="Arrow Icon"
+						class="nav-icon"
+				/></a>
+				<a href="#explore"
+					>Explore Spaces<img
+						src="images\green arrow.png"
+						alt="Arrow Icon"
+						class="nav-icon"
+				/></a>
+				<a href="#facilities"
+					>Space Facilities<img
+						src="images\green arrow.png"
+						alt="Arrow Icon"
+						class="nav-icon"
+				/></a>
 				<a href="#about">About</a>
 				<button type="button">Search Offices</button>
 			</nav>
@@ -86,7 +102,19 @@
 			<h2>With over 25 spaces across the UK</h2>
 			<h1>Let's find your new DeskSpace</h1>
 			<form>
-				<!-- Similar search form as above -->
+				<select name="location">
+					<option value="london">London</option>
+					<option value="birmingham">Birmingham</option>
+					<option value="cardiff">Cardiff</option>
+					<option value="glasgow">Glasgow</option>
+					<option value="manchester">Manchester</option>
+				</select>
+				<select name="people">
+					<option value="2-5">2-5 People</option>
+					<option value="6-10">6-10 People</option>
+					<option value="10+">10+ People</option>
+				</select>
+				<button type="submit">Search Offices</button>
 			</form>
 		</section>
 
