@@ -302,19 +302,86 @@ button.next:hover {
 }
 
 .call-to-action {
-	background: #333;
-	color: #fff;
-	padding: 40px 20px;
+	background-color: #e2ebe6;
+	padding: 50px 100px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 150px);
+	margin: auto;
 }
 
-.call-to-action h2 {
-	font-size: 1.5em;
+.cta-content h2 {
+	margin-bottom: 10px;
+	color: #333;
+	font-weight: normal;
 }
 
-.call-to-action h1 {
+.cta-content h1 {
+	margin-bottom: 30px;
+	color: #333;
+	font-weight: bold;
 	font-size: 2.5em;
-	margin: 20px 0;
+}
+
+.cta-form {
+	display: inline-flex;
+	justify-content: center;
+}
+
+.cta-form select,
+.cta-form {
+	padding: 16px 24px;
+	margin: 0;
+	border-right: none;
+	font-family: inherit;
+}
+
+.cta-button {
+	background-color: #01b154;
+	color: white;
+	border: 1px solid #01b154;
+	cursor: pointer;
+	height: 50px;
+	padding: 0px;
+	font-family: inherit;
+	font-size: 0.75rem;
+	line-height: 50px;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 0 5px 5px 0;
+	display: inline-block;
+	min-width: 150px;
+	box-sizing: border-box;
+}
+
+.cta-form select:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.cta-form .cta-button {
+	background-color: #01b154;
+	color: white;
+	border: 1px solid #01b154;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.cta-form .cta-button {
+	border-right: 1px solid #01b154;
+}
+
+.cta-form select,
+.cta-form .cta-button {
+	height: 50px;
+}
+
+.cta-form select:focus,
+.cta-form .cta-button:focus {
+	outline: none;
+	border-color: #01b154;
 }
 
 footer {
@@ -358,7 +425,21 @@ footer a {
 	}
 
 	.features {
-		grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.call-to-action {
+		padding: 50px 20px;
+	}
+
+	.cta-form {
+		flex-direction: column;
+	}
+
+	.cta-form select,
+	.cta-form .cta-button {
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	nav {
