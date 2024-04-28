@@ -42,29 +42,47 @@
 		</header>
 
 		<section class="hero">
-			<h1>Flexible coworking spaces</h1>
-			<p>
-				Find the office that's right for you. With beautifully designed Work
-				Spaces and flexible contracts, you can find a home for your business,
-				and access over 40 lounges whether you're an established organization or
-				new venture.
-			</p>
-
-			<form>
-				<select name="location">
-					<option value="london">London</option>
-					<option value="birmingham">Birmingham</option>
-					<option value="cardiff">Cardiff</option>
-					<option value="glasgow">Glasgow</option>
-					<option value="manchester">Manchester</option>
-				</select>
-				<select name="people">
-					<option value="2-5">2-5 People</option>
-					<option value="6-10">6-10 People</option>
-					<option value="10+">10+ People</option>
-				</select>
-				<button type="submit">Search Offices</button>
-			</form>
+			<div class="hero-content">
+				<h1>Flexible coworking spaces</h1>
+				<p>
+					Find the office that's right for you. With beautifully designed Work
+					Spaces and flexible contracts, you can find a home for your business,
+					and access over 40 lounges whether you're an established organization
+					or new venture.
+				</p>
+				<form class="search-form">
+					<div class="form-field">
+						<select
+							name="location"
+							aria-label="Select office location">
+							<option value="london">London</option>
+							<option value="birmingham">Birmingham</option>
+							<option value="cardiff">Cardiff</option>
+							<option value="glasgow">Glasgow</option>
+							<option value="manchester">Manchester</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<select
+							name="people"
+							aria-label="Select number of people">
+							<option value="2-5">2-5 People</option>
+							<option value="6-10">6-10 People</option>
+							<option value="10+">10+ People</option>
+						</select>
+					</div>
+					<button
+						type="submit"
+						class="search-button">
+						Search Offices
+					</button>
+				</form>
+			</div>
+			<div class="hero-image">
+				<img
+					src="./images/1st office image.png"
+					alt="Office Image" />
+			</div>
 		</section>
 
 		<section class="brands-section">
@@ -103,7 +121,6 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore.
 			</p>
-			<!-- Images and additional content here -->
 		</section>
 
 		<section class="why-choose">
